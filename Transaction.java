@@ -48,10 +48,10 @@ public class Transaction {
         listOfItems[2] = 12;
         listOfItems[3] = 3;
         listOfItems[4] = 20;
-        Transaction crap = new Transaction();
+        Transaction transaction = new Transaction();
         try {
-            crap.preValidation(listOfItems);
-            crap.composition();
+            transaction.preValidation(listOfItems);
+            transaction.composition();
         }
         catch(RuntimeException e) {
             System.out.println(e.getMessage());
